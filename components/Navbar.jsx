@@ -10,8 +10,8 @@ import NavLogo from '../public/assets/navLogo.png'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState('#000000');
+  const [linkColor, setLinkColor] = useState('#ffffff');
   // const [position, setPosition] = useState('fixed')
   // const router = useRouter();
 
@@ -60,7 +60,7 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt='/'
-              width='125'
+              width='50'
               height='50'
               className='cursor-pointer'
             />
@@ -72,19 +72,19 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#about'>About</Link>
+              <Link href='/#about'>Team</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#skills'>Skills</Link>
+              <Link href='/#partners'>Partners</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#projects'>Projects</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
+              <Link href='/#projects'>Games</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/#contact'>Login</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -109,7 +109,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#000000] p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -134,7 +134,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
+                Join us now!
               </p>
             </div>
           </div>
@@ -147,27 +147,27 @@ const Navbar = () => {
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  About
+                  Team
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/#partners'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
+                  Partners
                 </li>
               </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Projects
+                  History
                 </li>
               </Link>
               <Link href='/resume'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
+                  Contact
                 </li>
               </Link>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
+                  Login
                 </li>
               </Link>
             </ul>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaDiscord, FaFacebook, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg'
 
@@ -28,10 +28,10 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className='py-2'>DSTRUKT</h2>
+                <p>Guild Owner</p>
                 <p className='py-4'>
-                  I am available for freelance or full-time positions. Contact
+                  I am available for collabs and partnerships. Contact
                   me and let&apos;s talk.
                 </p>
               </div>
@@ -39,34 +39,28 @@ const Contact = () => {
                 <p className='uppercase pt-8'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
-                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                    href=' '
                     target='_blank'
                     rel='noreferrer'
                   >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaLinkedinIn />
+                      <FaFacebook />
                     </div>
                   </a>
                   <a
-                    href='https://github.com/fireclint'
+                    href=' '
                     target='_blank'
                     rel='noreferrer'
                   >
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                      <FaGithub />
+                      <FaDiscord />
                     </div>
                   </a>
 
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                    <AiOutlineMail />
+                    <FaTwitter />
                   </div>
-                  <Link href='/resume'>
-                    <a>
-                      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                      </div>
-                    </a>
-                  </Link>
+                   
                 </div>
               </div>
             </div>
@@ -78,7 +72,7 @@ const Contact = () => {
               <form
                 action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
                 method='POST'
-                enctype='multipart/form-data'
+                encType='multipart/form-data'
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
